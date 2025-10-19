@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan & Kesan - Heacia Divana Clara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-blue-100 min-h-screen p-4">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+        <!-- Header -->
+        <header class="bg-gradient-to-r from-pink-400 to-blue-400 p-6 text-center text-white relative overflow-hidden">
+            <div class="absolute -top-24 -left-24 w-48 h-48 bg-white opacity-20 rounded-full"></div>
+            <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-white opacity-20 rounded-full"></div>
+            
+            <h1 class="text-4xl font-bold mb-2 drop-shadow-md">Pesan & Kesan</h1>
+            <p class="text-xl opacity-90">Ucapan untuk Heacia Divana Clara</p>
+            
+            <div class="absolute top-4 right-4 heart-animation text-red-400">
+                <i class="fas fa-heart text-2xl"></i>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="bg-white p-4 shadow-sm">
+            <ul class="flex flex-wrap justify-center space-x-4">
+                <li><a href="index.html" class="text-gray-600 hover:text-pink-500 transition">Beranda</a></li>
+                <li><a href="about.html" class="text-gray-600 hover:text-pink-500 transition">Tentang Heacia</a></li>
+                <li><a href="gallery.html" class="text-gray-600 hover:text-pink-500 transition">Galeri Foto</a></li>
+                <li><a href="contact.html" class="text-pink-500 font-bold border-b-2 border-pink-500 pb-1">Pesan & Kesan</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="p-6">
+            <section class="mb-12">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <div class="bg-gradient-to-br from-pink-400 to-blue-400 p-6 rounded-2xl text-white shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Pesan dari Heacia</h3>
+                            <div class="bg-white bg-opacity-20 p-4 rounded-xl">
+                                <p class="text-xl italic mb-4">"Semoga selalu bahagia dan bisa mencapai cita-cita"</p>
+                                <p class="text-right font-bold">- Heacia Divana Clara</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <h3 class="text-2xl font-bold text-blue-500 mb-4">Kirim Pesan untuk Heacia</h3>
+                            
+                            <form id="messageForm" class="space-y-4">
+                                <div>
+                                    <label class="block text-gray-700 mb-2" for="name">Nama Anda:</label>
+                                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400" required>
+                                </div>
+                                
+                                <div>
+                                    <label class="block text-gray-700 mb-2" for="message">Pesan dan Kesan:</label>
+                                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400" placeholder="Tuliskan pesan dan kesan Anda untuk Heacia..." required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="bg-pink-400 hover:bg-pink-500 text-white px-6 py-3 rounded-full font-bold transition shadow-md w-full">
+                                    Kirim Pesan
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Display Messages -->
+                <div class="mt-12">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-2xl font-bold text-pink-500">Pesan dari Pengunjung</h3>
+                        <button id="deleteAllBtn" class="bg-red-400 hover:bg-red-500 text-white px-4 py-2 rounded-lg font-bold transition shadow-md text-sm">
+                            <i class="fas fa-trash mr-2"></i>Hapus Semua
+                        </button>
+                    </div>
+                    <div id="messageList" class="space-y-4">
+                        <!-- Messages will be displayed here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gradient-to-r from-pink-400 to-blue-400 p-6 text-white text-center">
+            <p class="text-lg font-bold mb-2">Dibuat dengan <i class="fas fa-heart text-red-400"></i> untuk Heacia Divana Clara</p>
+            <p>Semoga selalu bahagia dan bisa mencapai cita-cita!</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
